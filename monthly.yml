@@ -1,0 +1,63 @@
+name: Jobs.cz AI monthly snapshot
+
+# Spousti se kazdy den. Skript sam rozhodne, jestli se meri:
+#  - posledni den v mesici -> zmeri mesic
+#  - 1.-10. den dalsiho mesice -> dozene mesic, pokud chybi
+#  - jinak skonci bez zmeny (nic se necommituje)
+# Bezpecnost: jen cte verejny web jobs.cz a zapisuje soubory v tomto repu. Zadne tajne klice.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"        # denne 06:00 UTC (= 7:00/8:00 v CR)
+  workflow_dispatch:           # rucni spusteni tlacitkem v zalozce Actions
+    inputs:
+      force:
+        description: "Zmerit hned (zaskrtnout). Bez zaskrtnuti probehne jen bezna denni kontrola."
+        type: boolean
+        default: false
+
+permissions:
+  contents: write              # workflow smi commitnout aktualizovany tracker
+
+concurrency:
+  group: jobscz-ai-monthly
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run snapshot
+        env:
+          FORCE: ${{ inputs.force }}
+        run: |
+          if [ "$FORCE" = "true" ]; then
+            python jobscz_ai_monthly.py --force
+          else
+            python jobscz_ai_monthly.py
+          fi
+
+      - name: Commit results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A AI_jobs_tracker_jobscz.xlsx snapshots
+          if git diff --cached --quiet; then
+            echo "Zadne zmeny - dnes se nemerilo."
+          else
+            git commit -m "AI snapshot $(date -u +%Y-%m-%d)"
+            git push
+          fi
