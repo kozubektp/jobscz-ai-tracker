@@ -1,0 +1,317 @@
+{
+ "A_dedup_latest": 158,
+ "churn": {
+  "A": {
+   "gone": 85,
+   "new": 148,
+   "survived": 17
+  },
+  "all": {
+   "gone": 630,
+   "new": 891,
+   "survived": 115
+  },
+  "listing_data_available": true
+ },
+ "deltas": {
+  "A": {
+   "abs": 63,
+   "last": 165,
+   "pct": 61.8,
+   "prev": 102
+  },
+  "B": {
+   "abs": 191,
+   "last": 834,
+   "pct": 29.7,
+   "prev": 643
+  },
+  "ai_rel": {
+   "abs": 254,
+   "last": 999,
+   "pct": 34.1,
+   "prev": 745
+  },
+  "total": {
+   "abs": 1912,
+   "last": 17407,
+   "pct": 12.3,
+   "prev": 15495
+  }
+ },
+ "final": false,
+ "gap_months": 1,
+ "gone_A_roles_sample": [
+  "GenAI/LLM Application Developer | ABB s.r.o.",
+  "AI Engineer | Air Bank a.s.",
+  "AI & Automation Lead | Allwyn Česko a.s.",
+  "AI Engineer (JPO29170) | Alza.cz a.s.",
+  "Senior Data & AI Engineer | Aon Central and Eastern Europe a.s.",
+  "Strategic AI Finance Transformation Partner | Atlas Copco Services s.r.o.",
+  "Data Scientist | BNP Paribas Cardif",
+  "Data Scientist (COPS cluster / OMR cell) with German | COMMERZBANK Aktiengesellschaft, pobočka Praha",
+  "TRAINEE V OBLASTI ZAVÁDĚNÍ AI (M/Ž) - nastartuj kariéru v projektovém řízení! 🤖 | Foxconn Czech Republic",
+  "Specialista provozu investiční společnosti - fondy, finance, regulace, AI | Golden Gate investiční společnost, a.s.",
+  "GenAI Engineer (full-stack) | HP TRONIC",
+  "AI IT AMBASADOR | J&T BANKA",
+  "FULL STACK & AI TECH LEAD | Jobsyno Global s.r.o.",
+  "Purchasing Automation and AI Solution Architect | Knorr-Bremse Services Europe s.r.o.",
+  "AI Engineer | Komerční banka, a.s.",
+  "AI Application Manager (m/ž) | Kooperativa pojišťovna, a.s., VIG",
+  "Microsoft AI Specialista (m/ž) | Kooperativa pojišťovna, a.s., VIG",
+  "AI Engineer | Lundegaard a.s.",
+  "AI Solution Architekt/ka | MONETA Money Bank, a.s.",
+  "IT Analytik/čka & Developer – AI, automatizace a moderní aplikace | MONETA Money Bank, a.s."
+ ],
+ "latest": {
+  "A": 165,
+  "B": 834,
+  "ai_rel": 999,
+  "date": "2026-09-24",
+  "matched": 1006,
+  "pct_A_of_ai": 16.5,
+  "pct_A_of_total": 0.948,
+  "pct_ai_of_total": 5.74,
+  "period": "2026-09",
+  "promoted": 7,
+  "total": 17407
+ },
+ "new_A_roles": [
+  "AI Transformation Trainee Program | ABB s.r.o.",
+  "AI marketing specialist | ADECCO spol.s r.o.",
+  "AI Engineer | AGEL a.s.",
+  "Gen AI Engineer / Consultant | Accenture",
+  "AI Engineer/ka | Air Bank a.s.",
+  "AI vývojář/ka | Air Bank a.s.",
+  "Specialista automatizace (AI & procesy) | Air Bank a.s.",
+  "AI Engineer (JPO29170) | Alza.cz a.s.",
+  "AI & Data Analytics Intern – 20 hrs/week | Axial Personnel Agency, s.r.o.",
+  "AI/ML Engineer | CETIN a.s.",
+  "IT / AI Automation Engineer | ComAp",
+  "AI Platform Engineer — DEK a.s. | DEK a.s.",
+  "Senior Forward Deployed Engineer: AI Agent Platform | DHL Information Services (Europe) s.r.o.",
+  "AI Engineer | Deckard & Penfield s.r.o.",
+  "Group Data Scientist | Dr.Max",
+  "AI Adoption Expert | EY",
+  "Senior AI & Data Transformation Konzultant | EY",
+  "DOMAIN ARCHITECT AI & INNOVATION | Gebauer a Griller Kabeltechnik, spol. s r.o.",
+  "AI Security Engineer | Grafton Recruitment s.r.o.",
+  "AI Assistant | Grant Thornton Czech Republic s.r.o.",
+  "Právník | Legal AI Adoption Lead | HAVEL & PARTNERS s.r.o., advokátní kancelář",
+  "AI Developer JUNIOR/MEDIOR | HOPI HOLDING, a.s.",
+  "AI OBSERVABILITY ENGINEER | J&T BANKA",
+  "SENIOR JAVA DEVELOPER & AI INNOVATION LEAD | J&T BANKA",
+  "IT & AI Transformation Lead | JOBSTART s.r.o.",
+  "AI Education Lead (m/ž) | Kooperativa pojišťovna, a.s., VIG",
+  "AI-first Software Engineer | Košík.cz s.r.o.",
+  "RISK & AI ENGINEER | MONEE TECH GROUP s.r.o.",
+  "SEO & AI Search Specialista (AEO/GEO) – medior/senior | MONEE TECH GROUP s.r.o.",
+  "AI Observability Engineer | Budujte spolehlivou monitoring platformu | Manpower IT",
+  "AI Native DEV Manager (m/ž) | O2 Czech Republic a.s.",
+  "Data Science Team Lead | Processand s.r.o.",
+  "BUSINESS TRANSFORMATION MANAGER - IT | AI | Data | Automation | Prušák Group s.r.o.",
+  "SENIOR AI ENGINEER & ARCHITECT | RENOMIA, a. s.",
+  "Cloud / DevOps Engineer*ka (AWS a AI) | Raiffeisenbank a.s.",
+  "Data Scientist Junior / Data Scientist Medior – Corporate Banking (m/f) | Raiffeisenbank a.s.",
+  "AI & Automatizace Specialista | Renturi s.r.o.",
+  "Lead AI Engineer | STAPRO s. r. o.",
+  "Obchodník pro softwarová a AI řešení | Seyfor, a. s.",
+  "Marketing Manager (f/m/d) – Data-Driven & AI-Powered Marketing | Industrial Automation | Siemens, s.r.o."
+ ],
+ "new_A_roles_truncated": 108,
+ "notes": [
+  "Mezi obdobimi 2026-07 a 2026-09 chybi 1 mesic(e) mereni.",
+  "Mereni neni z posledniho dne mesice (predbezne / rucni).",
+  "Po ocisteni o duplicitni inzeraty (stejna role CZ/EN) je A = 158 misto 165."
+ ],
+ "period": "2026-09",
+ "previous": {
+  "A": 102,
+  "B": 643,
+  "ai_rel": 745,
+  "date": "2026-07-26",
+  "matched": 745,
+  "pct_A_of_ai": 13.7,
+  "pct_A_of_total": 0.658,
+  "pct_ai_of_total": 4.81,
+  "period": "2026-07",
+  "promoted": 0,
+  "total": 15495
+ },
+ "schema": 1,
+ "series": [
+  {
+   "A": 136,
+   "B": 666,
+   "ai_rel": 802,
+   "date": "2026-06-04",
+   "matched": 810,
+   "pct_A_of_ai": 17.0,
+   "pct_A_of_total": 0.741,
+   "pct_ai_of_total": 4.37,
+   "period": "2026-06",
+   "promoted": 8,
+   "total": 18357
+  },
+  {
+   "A": 102,
+   "B": 643,
+   "ai_rel": 745,
+   "date": "2026-07-26",
+   "matched": 745,
+   "pct_A_of_ai": 13.7,
+   "pct_A_of_total": 0.658,
+   "pct_ai_of_total": 4.81,
+   "period": "2026-07",
+   "promoted": 0,
+   "total": 15495
+  },
+  {
+   "A": 165,
+   "B": 834,
+   "ai_rel": 999,
+   "date": "2026-09-24",
+   "matched": 1006,
+   "pct_A_of_ai": 16.5,
+   "pct_A_of_total": 0.948,
+   "pct_ai_of_total": 5.74,
+   "period": "2026-09",
+   "promoted": 7,
+   "total": 17407
+  }
+ ],
+ "share_change_pp": {
+  "pct_A_of_ai": 2.8,
+  "pct_A_of_total": 0.29,
+  "pct_ai_of_total": 0.93
+ },
+ "snapshot_date": "2026-09-24",
+ "source": "https://github.com/kozubektp/jobscz-ai-tracker",
+ "top_A_companies_latest": [
+  {
+   "company": "Škoda Auto a.s.",
+   "count": 15
+  },
+  {
+   "company": "UNIQA",
+   "count": 7
+  },
+  {
+   "company": "Air Bank a.s.",
+   "count": 3
+  },
+  {
+   "company": "O2 Czech Republic a.s.",
+   "count": 3
+  },
+  {
+   "company": "Česká spořitelna, a.s.",
+   "count": 3
+  },
+  {
+   "company": "EY",
+   "count": 2
+  },
+  {
+   "company": "J&T BANKA",
+   "count": 2
+  },
+  {
+   "company": "MONEE TECH GROUP s.r.o.",
+   "count": 2
+  },
+  {
+   "company": "Raiffeisenbank a.s.",
+   "count": 2
+  },
+  {
+   "company": "Siemens, s.r.o.",
+   "count": 2
+  }
+ ],
+ "top_A_companies_previous": [
+  {
+   "company": "Škoda Auto a.s.",
+   "count": 5
+  },
+  {
+   "company": "NN",
+   "count": 4
+  },
+  {
+   "company": "Česká spořitelna, a.s.",
+   "count": 3
+  },
+  {
+   "company": "Kooperativa pojišťovna, a.s., VIG",
+   "count": 2
+  },
+  {
+   "company": "MONETA Money Bank, a.s.",
+   "count": 2
+  },
+  {
+   "company": "O2 Czech Republic a.s.",
+   "count": 2
+  },
+  {
+   "company": "TV Nova s.r.o.",
+   "count": 2
+  },
+  {
+   "company": "atmoskop.cz",
+   "count": 2
+  },
+  {
+   "company": "teamIT s.r.o.",
+   "count": 2
+  },
+  {
+   "company": "ABB s.r.o.",
+   "count": 1
+  }
+ ],
+ "top_all_companies_latest": [
+  {
+   "company": "Česká spořitelna, a.s.",
+   "count": 82
+  },
+  {
+   "company": "Škoda Auto a.s.",
+   "count": 24
+  },
+  {
+   "company": "Alza.cz a.s.",
+   "count": 20
+  },
+  {
+   "company": "Siemens, s.r.o.",
+   "count": 17
+  },
+  {
+   "company": "UNIQA",
+   "count": 12
+  },
+  {
+   "company": "O2 Czech Republic a.s.",
+   "count": 11
+  },
+  {
+   "company": "Seznam.cz, a.s.",
+   "count": 10
+  },
+  {
+   "company": "atmoskop.cz",
+   "count": 10
+  },
+  {
+   "company": "Air Bank a.s.",
+   "count": 9
+  },
+  {
+   "company": "rohlik.cz",
+   "count": 9
+  }
+ ],
+ "tracker_url": "https://github.com/kozubektp/jobscz-ai-tracker/blob/main/AI_jobs_tracker_jobscz.xlsx"
+}
