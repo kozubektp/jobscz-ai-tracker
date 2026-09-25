@@ -43,6 +43,10 @@ jobs:
           else
             python jobscz_ai_monthly.py
           fi
+ 
+      - name: Build stats for report
+        continue-on-error: true
+        run: python jobscz_stats.py
 
       - name: Commit results
         run: |
