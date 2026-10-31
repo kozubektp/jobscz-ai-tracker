@@ -1,0 +1,342 @@
+{
+ "A_dedup_latest": 59,
+ "churn": {
+  "A": {
+   "gone": 146,
+   "new": 50,
+   "survived": 9
+  },
+  "all": {
+   "gone": 948,
+   "new": 50,
+   "survived": 10
+  },
+  "listing_data_available": true
+ },
+ "definitions": {
+  "A": "AI-zamerene role: AI/ML termin primo v NAZVU pozice (bez promovanych karet).",
+  "A_dedup_latest": "A po slouceni stejne role inzerovane cesky i anglicky (m/z vs m/f).",
+  "B": "AI jako prvek: inzerat nalezeny fulltextem 'ai', AI neni v nazvu pozice.",
+  "ai_rel": "AI-relevantni inzeraty = A + B.",
+  "churn": "Porovnani ID inzeratu mezi dvema merenimi: survived = v obou, new = jen v poslednim, gone = jen v predchozim.",
+  "final": "true = mereni z posledniho dne mesice (nebo dohnane po nem); false = predbezne/rucni mereni.",
+  "gap_months": "Pocet chybejicich mesicu mezi predchozim a poslednim merenim.",
+  "promoted": "Pocet promovanych karet 'Prilezitost dne', ktere jobs.cz vklada do kazdeho vyhledavani. Nejsou to AI shody a z A i B se VYRAZUJI. Nejde o presun mezi kategoriemi."
+ },
+ "deltas": {
+  "A": {
+   "abs": -96,
+   "last": 59,
+   "pct": -61.9,
+   "prev": 155
+  },
+  "B": {
+   "abs": -801,
+   "last": 0,
+   "pct": -100.0,
+   "prev": 801
+  },
+  "ai_rel": {
+   "abs": -897,
+   "last": 59,
+   "pct": -93.8,
+   "prev": 956
+  },
+  "total": {
+   "abs": -180,
+   "last": 16425,
+   "pct": -1.1,
+   "prev": 16605
+  }
+ },
+ "email_placeholders": [
+  "{{HLAVNI_ZJISTENI}}",
+  "{{CO_SE_ZMENILO}}",
+  "{{INTERPRETACE}}"
+ ],
+ "email_template_html": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"></head><body style=\"margin:0;padding:0;background:#f3f4f6;\"><table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"#f3f4f6\"><tr><td align=\"center\" style=\"padding:24px 10px;\"><table width=\"640\" cellpadding=\"0\" cellspacing=\"0\" style=\"max-width:640px;width:100%;background:#ffffff;border-radius:8px;font-family:Arial,Helvetica,sans-serif;color:#1f2937;\"><tr><td style=\"background:#19325A;padding:20px 28px;border-radius:8px 8px 0 0;\"><div style=\"font-size:12px;color:#c7d2fe;letter-spacing:1px;\">JOBS.CZ AI REPORT</div><div style=\"font-size:22px;font-weight:bold;color:#ffffff;\">říjen 2026</div><div style=\"font-size:12px;color:#c7d2fe;\">Měření 31. 10. 2026 · srovnání s 30. 9. 2026</div></td></tr><tr><td style=\"padding:14px 22px 6px 22px;\"><table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td width=\"33%\" valign=\"top\" style=\"padding:6px;\"><table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" style=\"background:#f3f4f6;border-radius:6px;\"><tr><td style=\"padding:14px 14px 4px 14px;font-size:12px;color:#6b7280;\">Podíl AI inzerátů</td></tr><tr><td style=\"padding:0 14px;font-size:26px;font-weight:bold;color:#19325A;\">0,4 %</td></tr><tr><td style=\"padding:4px 14px 14px 14px;font-size:12px;\"><span style=\"color:#b91c1c;font-weight:bold;\">▼ -5,4 p. b.</span></td></tr></table></td><td width=\"33%\" valign=\"top\" style=\"padding:6px;\"><table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" style=\"background:#f3f4f6;border-radius:6px;\"><tr><td style=\"padding:14px 14px 4px 14px;font-size:12px;color:#6b7280;\">AI-zaměřené role (A)</td></tr><tr><td style=\"padding:0 14px;font-size:26px;font-weight:bold;color:#19325A;\">59</td></tr><tr><td style=\"padding:4px 14px 14px 14px;font-size:12px;\"><span style=\"color:#b91c1c;font-weight:bold;\">▼ -61,9 %</span></td></tr></table></td><td width=\"33%\" valign=\"top\" style=\"padding:6px;\"><table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" style=\"background:#f3f4f6;border-radius:6px;\"><tr><td style=\"padding:14px 14px 4px 14px;font-size:12px;color:#6b7280;\">Celkem inzerátů</td></tr><tr><td style=\"padding:0 14px;font-size:26px;font-weight:bold;color:#19325A;\">16 425</td></tr><tr><td style=\"padding:4px 14px 14px 14px;font-size:12px;\"><span style=\"color:#b91c1c;font-weight:bold;\">▼ -1,1 %</span></td></tr></table></td></tr></table></td></tr><tr><td style=\"padding:18px 28px 4px 28px;font-size:15px;font-weight:bold;color:#19325A;border-top:1px solid #e5e7eb;\">Hlavní zjištění</td></tr><tr><td style=\"padding:4px 28px 8px 28px;font-size:14px;line-height:1.5;\"><ul style=\"margin:6px 0;padding-left:20px;\">{{HLAVNI_ZJISTENI}}</ul></td></tr><tr><td style=\"padding:18px 28px 4px 28px;font-size:15px;font-weight:bold;color:#19325A;border-top:1px solid #e5e7eb;\">Vývoj v čase</td></tr><tr><td style=\"padding:4px 28px 8px 28px;font-size:14px;line-height:1.5;\"><table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td style=\"padding:6px 8px;font-size:11px;color:#6b7280;text-align:left;border-bottom:1px solid #e5e7eb;\">Období</td><td style=\"padding:6px 8px;font-size:11px;color:#6b7280;text-align:right;border-bottom:1px solid #e5e7eb;\">Celkem</td><td style=\"padding:6px 8px;font-size:11px;color:#6b7280;text-align:right;border-bottom:1px solid #e5e7eb;\">AI-rel.</td><td style=\"padding:6px 8px;font-size:11px;color:#6b7280;text-align:right;border-bottom:1px solid #e5e7eb;\">Podíl AI</td><td style=\"padding:6px 8px;font-size:11px;color:#6b7280;text-align:left;border-bottom:1px solid #e5e7eb;\"></td><td style=\"padding:6px 8px;font-size:11px;color:#6b7280;text-align:right;border-bottom:1px solid #e5e7eb;\">A</td><td style=\"padding:6px 8px;font-size:11px;color:#6b7280;text-align:right;border-bottom:1px solid #e5e7eb;\">A z celku</td></tr><tr><td style=\"padding:6px 8px;font-size:13px;\">2026-06</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">18 357</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">802</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\"><b>4,4 %</b></td><td width=\"110\" style=\"padding:6px 8px;\"><table width=\"76%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td height=\"10\" bgcolor=\"#19325A\" style=\"font-size:1px;line-height:1px;\">&nbsp;</td></tr></table></td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">136</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">0,74 %</td></tr><tr><td style=\"padding:6px 8px;font-size:13px;\">2026-07</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">15 495</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">745</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\"><b>4,8 %</b></td><td width=\"110\" style=\"padding:6px 8px;\"><table width=\"84%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td height=\"10\" bgcolor=\"#19325A\" style=\"font-size:1px;line-height:1px;\">&nbsp;</td></tr></table></td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">102</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">0,66 %</td></tr><tr><td colspan=\"7\" style=\"padding:4px 8px;font-size:12px;color:#6b7280;font-style:italic;\">2026-08 — měření chybí</td></tr><tr><td style=\"padding:6px 8px;font-size:13px;\">2026-09</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">16 605</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">956</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\"><b>5,8 %</b></td><td width=\"110\" style=\"padding:6px 8px;\"><table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td height=\"10\" bgcolor=\"#19325A\" style=\"font-size:1px;line-height:1px;\">&nbsp;</td></tr></table></td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">155</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">0,93 %</td></tr><tr><td style=\"padding:6px 8px;font-size:13px;\">2026-10</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">16 425</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">59</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\"><b>0,4 %</b></td><td width=\"110\" style=\"padding:6px 8px;\"><table width=\"6%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td height=\"10\" bgcolor=\"#19325A\" style=\"font-size:1px;line-height:1px;\">&nbsp;</td></tr></table></td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">59</td><td style=\"padding:6px 8px;font-size:13px;text-align:right;\">0,36 %</td></tr></table></td></tr><tr><td style=\"padding:18px 28px 4px 28px;font-size:15px;font-weight:bold;color:#19325A;border-top:1px solid #e5e7eb;\">Co se změnilo</td></tr><tr><td style=\"padding:4px 28px 8px 28px;font-size:14px;line-height:1.5;\"><ul style=\"margin:6px 0;padding-left:20px;\">{{CO_SE_ZMENILO}}</ul></td></tr><tr><td style=\"padding:18px 28px 4px 28px;font-size:15px;font-weight:bold;color:#19325A;border-top:1px solid #e5e7eb;\">Kdo nabírá AI role</td></tr><tr><td style=\"padding:4px 28px 8px 28px;font-size:14px;line-height:1.5;\"><table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td style=\"padding:6px 8px;font-size:11px;color:#6b7280;border-bottom:1px solid #e5e7eb;text-align:left;\">Firma</td><td style=\"padding:6px 8px;font-size:11px;color:#6b7280;border-bottom:1px solid #e5e7eb;text-align:right;\">A role nyní</td><td style=\"padding:6px 8px;font-size:11px;color:#6b7280;border-bottom:1px solid #e5e7eb;text-align:right;\">minule</td></tr><tr><td style=\"padding:5px 8px;font-size:13px;\">Škoda Auto a.s.</td><td style=\"padding:5px 8px;font-size:13px;text-align:right;\"><b>4</b></td><td style=\"padding:5px 8px;font-size:13px;text-align:right;color:#6b7280;\">4</td></tr><tr><td style=\"padding:5px 8px;font-size:13px;\">O2 Czech Republic a.s.</td><td style=\"padding:5px 8px;font-size:13px;text-align:right;\"><b>3</b></td><td style=\"padding:5px 8px;font-size:13px;text-align:right;color:#6b7280;\">2</td></tr><tr><td style=\"padding:5px 8px;font-size:13px;\">J&amp;T BANKA</td><td style=\"padding:5px 8px;font-size:13px;text-align:right;\"><b>2</b></td><td style=\"padding:5px 8px;font-size:13px;text-align:right;color:#6b7280;\">2</td></tr><tr><td style=\"padding:5px 8px;font-size:13px;\">NN</td><td style=\"padding:5px 8px;font-size:13px;text-align:right;\"><b>2</b></td><td style=\"padding:5px 8px;font-size:13px;text-align:right;color:#6b7280;\">—</td></tr><tr><td style=\"padding:5px 8px;font-size:13px;\">Alza.cz a.s.</td><td style=\"padding:5px 8px;font-size:13px;text-align:right;\"><b>1</b></td><td style=\"padding:5px 8px;font-size:13px;text-align:right;color:#6b7280;\">—</td></tr><tr><td style=\"padding:5px 8px;font-size:13px;\">COMMERZBANK Aktiengesellschaft, pobočka Praha</td><td style=\"padding:5px 8px;font-size:13px;text-align:right;\"><b>1</b></td><td style=\"padding:5px 8px;font-size:13px;text-align:right;color:#6b7280;\">—</td></tr></table></td></tr><tr><td style=\"padding:18px 28px 4px 28px;font-size:15px;font-weight:bold;color:#19325A;border-top:1px solid #e5e7eb;\">Interpretace</td></tr><tr><td style=\"padding:4px 28px 8px 28px;font-size:14px;line-height:1.5;\"><ul style=\"margin:6px 0;padding-left:20px;\">{{INTERPRETACE}}</ul></td></tr><tr><td style=\"padding:16px 28px 8px 28px;border-top:1px solid #e5e7eb;font-size:12px;color:#6b7280;line-height:1.5;\"><b>Metodika:</b> A = AI/ML termín v názvu pozice, B = AI jen v popisu, AI-rel. = A+B; promované karty jsou vyřazené. Jeden portál (jobs.cz), klasifikace podle názvu.<ul style=\"margin:6px 0;padding-left:18px;\"><li>Bez poznámek.</li></ul></td></tr><tr><td style=\"padding:8px 28px 24px 28px;\"><a href=\"https://github.com/kozubektp/jobscz-ai-tracker/blob/main/AI_jobs_tracker_jobscz.xlsx\" style=\"background:#19325A;color:#ffffff;text-decoration:none;font-size:13px;padding:9px 16px;border-radius:5px;display:inline-block;\">Otevřít data (Excel)</a><span style=\"font-size:12px;color:#6b7280;\">&nbsp;&nbsp;Jobs.cz AI tracker</span></td></tr></table></td></tr></table></body></html>",
+ "final": true,
+ "gap_months": 0,
+ "gone_A_roles_sample": [
+  "AI Transformation Trainee Program | ABB s.r.o.",
+  "AI Engineer | AGEL a.s.",
+  "Gen AI Engineer / Consultant | Accenture",
+  "AI Engineer/ka | Air Bank a.s.",
+  "AI vývojář/ka | Air Bank a.s.",
+  "Specialista automatizace (AI & procesy) | Air Bank a.s.",
+  "AI Platform Engineer | Alma Career Czechia s.r.o.",
+  "Senior AI Solutions Engineer | Alma Career Czechia s.r.o.",
+  "AI Engineer (JPO29170) | Alza.cz a.s.",
+  "AI & Data Analytics Intern – 20 hrs/week | Axial Personnel Agency, s.r.o.",
+  "AI/ML Engineer | CETIN a.s.",
+  "Senior Data Scientist & Machine Learning | ComAp",
+  "AI Platform Engineer — DEK a.s. | DEK a.s.",
+  "Senior Forward Deployed Engineer: AI Agent Platform | DHL Information Services (Europe) s.r.o.",
+  "AI Engineer | Deckard & Penfield s.r.o.",
+  "Group Data Scientist | Dr.Max",
+  "AI Adoption Expert | EY",
+  "Specialista digitalizace financí | Power Platform & AI 🤖 | GZ Media, a.s.",
+  "DOMAIN ARCHITECT AI & INNOVATION | Gebauer a Griller Kabeltechnik, spol. s r.o.",
+  "Právník | Legal AI Adoption Lead | HAVEL & PARTNERS s.r.o., advokátní kancelář"
+ ],
+ "latest": {
+  "A": 59,
+  "B": 0,
+  "ai_rel": 59,
+  "date": "2026-10-31",
+  "matched": 60,
+  "pct_A_of_ai": 100.0,
+  "pct_A_of_total": 0.359,
+  "pct_ai_of_total": 0.36,
+  "period": "2026-10",
+  "promoted": 1,
+  "total": 16425
+ },
+ "new_A_roles": [
+  "AI tool expert (JPO31009) | Alza.cz a.s.",
+  "(Senior) AI ICT Risk, Threat Modelling and Technology Research Specialist | COMMERZBANK Aktiengesellschaft, pobočka Praha",
+  "Senior Forward Deployed Engineer - Full-Stack Engineering, DevOps and Agentic AI | DHL Information Services (Europe) s.r.o.",
+  "AI Security Red Team Engineer | Grafton Recruitment s.r.o.",
+  "AI, PROCUREMENT ANALYTICS & STRATEGIC SOURCING INTERN (m/f) | HOFMANN WIZARD s.r.o.",
+  "Advanced AI Engineer/Scientist - m/f/d | Honeywell Aerospace",
+  "AI AGENT MANAGER | J&T BANKA",
+  "AI PLATFORM SENIOR SPECIALIST | J&T BANKA",
+  "Associate Manager | AI/ML Engineering | Hybrid Prague | Manpower IT",
+  "AI Specialist (M/Ž) | Moore Czech Republic s.r.o.",
+  "Chief AI Officer (CAIO) | NAKIT, s. p.",
+  "Senior AI Engineer | NN",
+  "Senior AI Solution Architect | NN",
+  "AI, Procurement Analytics & Strategic Sourcing Intern (Part-Time) | NonStop Consulting s.r.o.",
+  "Fullstack Developer / AI-Native Engineer (m/ž) | O2 Czech Republic a.s.",
+  "QA Engineer / AI-Native Tester (m/ž) | O2 Czech Republic a.s.",
+  "🤖 AI Team Lead | Penta Bank, a. s., pobočka Česká republika",
+  "AI Solution Architect | Od RAG po AI agenty pro moderní bankovnictví | Profinit EU, s.r.o.",
+  "AI & Automatizace Specialista | Renturi s.r.o.",
+  "CRM Automation Specialist Junior – AI & CRM | SPORTISIMO s.r.o.",
+  "Senior AI Engineer | Skupina ČEZ",
+  "AI engineer junior | Solar Turbines EAME s.r.o.",
+  "AI Engineer Senior/Expert (f/m) | T-Mobile Czech Republic a.s.",
+  "AI Adoption Specialist | TV Nova s.r.o.",
+  "Koordinátorka/koordinátor rozvoje a využití AI | Vysoké učení technické v Brně",
+  "AI SECURITY SPECIALIST | VŠEOBECNÁ ZDRAVOTNÍ POJIŠŤOVNA ČESKÉ REPUBLIKY",
+  "AI Data & Systems Readiness Specialist (m/ž) | Škoda Auto a.s.",
+  "AI Project & Performance Specialist (m/ž) | Škoda Auto a.s.",
+  "AI Use Case & Business Case Specialist (m/ž) | Škoda Auto a.s.",
+  "AI & Transformation Manager pro Ambiente | ",
+  "AI Architect (Platform & Integration) | ",
+  "AI Architekt | ",
+  "AI Automation - Agent Specialist | ",
+  "AI Content Creator | ",
+  "AI Development and Deployment Manager | ",
+  "AI Project Manager | ",
+  "AI Tech Lead (AI Development & Delivery) | ",
+  "Adoption Consultant — AI a Microsoft 365 Copilot | ",
+  "Associate Manager - AI/ML Engineering | ",
+  "B2B obchodník pro AI řešení | Praha | Home office | 120 tis. Kč+ | "
+ ],
+ "new_A_roles_truncated": 10,
+ "notes": [],
+ "period": "2026-10",
+ "previous": {
+  "A": 155,
+  "B": 801,
+  "ai_rel": 956,
+  "date": "2026-09-30",
+  "matched": 958,
+  "pct_A_of_ai": 16.2,
+  "pct_A_of_total": 0.933,
+  "pct_ai_of_total": 5.76,
+  "period": "2026-09",
+  "promoted": 2,
+  "total": 16605
+ },
+ "schema": 2,
+ "series": [
+  {
+   "A": 136,
+   "B": 666,
+   "ai_rel": 802,
+   "date": "2026-06-04",
+   "matched": 810,
+   "pct_A_of_ai": 17.0,
+   "pct_A_of_total": 0.741,
+   "pct_ai_of_total": 4.37,
+   "period": "2026-06",
+   "promoted": 8,
+   "total": 18357
+  },
+  {
+   "A": 102,
+   "B": 643,
+   "ai_rel": 745,
+   "date": "2026-07-26",
+   "matched": 745,
+   "pct_A_of_ai": 13.7,
+   "pct_A_of_total": 0.658,
+   "pct_ai_of_total": 4.81,
+   "period": "2026-07",
+   "promoted": 0,
+   "total": 15495
+  },
+  {
+   "A": 155,
+   "B": 801,
+   "ai_rel": 956,
+   "date": "2026-09-30",
+   "matched": 958,
+   "pct_A_of_ai": 16.2,
+   "pct_A_of_total": 0.933,
+   "pct_ai_of_total": 5.76,
+   "period": "2026-09",
+   "promoted": 2,
+   "total": 16605
+  },
+  {
+   "A": 59,
+   "B": 0,
+   "ai_rel": 59,
+   "date": "2026-10-31",
+   "matched": 60,
+   "pct_A_of_ai": 100.0,
+   "pct_A_of_total": 0.359,
+   "pct_ai_of_total": 0.36,
+   "period": "2026-10",
+   "promoted": 1,
+   "total": 16425
+  }
+ ],
+ "share_change_pp": {
+  "pct_A_of_ai": 83.8,
+  "pct_A_of_total": -0.574,
+  "pct_ai_of_total": -5.4
+ },
+ "snapshot_date": "2026-10-31",
+ "source": "https://github.com/kozubektp/jobscz-ai-tracker",
+ "top_A_companies_latest": [
+  {
+   "company": "Škoda Auto a.s.",
+   "count": 4
+  },
+  {
+   "company": "O2 Czech Republic a.s.",
+   "count": 3
+  },
+  {
+   "company": "J&T BANKA",
+   "count": 2
+  },
+  {
+   "company": "NN",
+   "count": 2
+  },
+  {
+   "company": "Alza.cz a.s.",
+   "count": 1
+  },
+  {
+   "company": "COMMERZBANK Aktiengesellschaft, pobočka Praha",
+   "count": 1
+  },
+  {
+   "company": "DHL Information Services (Europe) s.r.o.",
+   "count": 1
+  },
+  {
+   "company": "EY",
+   "count": 1
+  },
+  {
+   "company": "Grafton Recruitment s.r.o.",
+   "count": 1
+  },
+  {
+   "company": "HOFMANN WIZARD s.r.o.",
+   "count": 1
+  }
+ ],
+ "top_A_companies_previous": [
+  {
+   "company": "UNIQA",
+   "count": 7
+  },
+  {
+   "company": "Škoda Auto a.s.",
+   "count": 4
+  },
+  {
+   "company": "Air Bank a.s.",
+   "count": 3
+  },
+  {
+   "company": "Česká spořitelna, a.s.",
+   "count": 3
+  },
+  {
+   "company": "Alma Career Czechia s.r.o.",
+   "count": 2
+  },
+  {
+   "company": "EY",
+   "count": 2
+  },
+  {
+   "company": "J&T BANKA",
+   "count": 2
+  },
+  {
+   "company": "MONEE TECH GROUP s.r.o.",
+   "count": 2
+  },
+  {
+   "company": "O2 Czech Republic a.s.",
+   "count": 2
+  },
+  {
+   "company": "Raiffeisenbank a.s.",
+   "count": 2
+  }
+ ],
+ "top_all_companies_latest": [
+  {
+   "company": "Škoda Auto a.s.",
+   "count": 4
+  },
+  {
+   "company": "O2 Czech Republic a.s.",
+   "count": 3
+  },
+  {
+   "company": "J&T BANKA",
+   "count": 2
+  },
+  {
+   "company": "NN",
+   "count": 2
+  },
+  {
+   "company": "Alza.cz a.s.",
+   "count": 1
+  },
+  {
+   "company": "COMMERZBANK Aktiengesellschaft, pobočka Praha",
+   "count": 1
+  },
+  {
+   "company": "DHL Information Services (Europe) s.r.o.",
+   "count": 1
+  },
+  {
+   "company": "EY",
+   "count": 1
+  },
+  {
+   "company": "Grafton Recruitment s.r.o.",
+   "count": 1
+  },
+  {
+   "company": "HOFMANN WIZARD s.r.o.",
+   "count": 1
+  }
+ ],
+ "tracker_url": "https://github.com/kozubektp/jobscz-ai-tracker/blob/main/AI_jobs_tracker_jobscz.xlsx"
+}
